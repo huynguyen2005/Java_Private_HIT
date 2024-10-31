@@ -7,7 +7,6 @@ public class bai1 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap 1 so bat ki: ");
         String x = sc.nextLine();
-
         if (x.length() == 3) {
             // Xử lý số có 3 chữ số
             if (x.charAt(0) == '1') System.out.print("Mot tram ");

@@ -1,23 +1,24 @@
 package Buoi4;
 
 public class Book {
-	private int masach;
-	private String tensach;
-	private String tentacgia;
-	private int namsanxuat;
-	private String tomtatnoidung;
-	private double giatien;
+	protected int masach;
+	protected String tensach;
+	protected Tacgia x;
+	protected int namsanxuat;
+	protected String tomtatnoidung;
+	protected double giatien;
 	public Book() {
 		
 	}
-	public Book(int masach, String tensach, String tentacgia, int namsanxuat, String tomtatnoidung, double giatien) {
+	public Book(int masach, String tensach, Tacgia x, int namsanxuat, String tomtatnoidung, double giatien) {
 		this.masach = masach;
 		this.tensach = tensach;
-		this.tentacgia = tentacgia;
+		this.x = x;
 		this.namsanxuat = namsanxuat;
 		this.tomtatnoidung = tomtatnoidung;
 		this.giatien = giatien;
 	}
+	
 	public int getMasach() {
 		return masach;
 	}
@@ -30,11 +31,11 @@ public class Book {
 	public void setTensach(String tensach) {
 		this.tensach = tensach;
 	}
-	public String getTentacgia() {
-		return tentacgia;
+	public Tacgia getX() {
+		return x;
 	}
-	public void setTentacgia(String tentacgia) {
-		this.tentacgia = tentacgia;
+	public void setX(Tacgia x) {
+		this.x = x;
 	}
 	public int getNamsanxuat() {
 		return namsanxuat;
@@ -56,7 +57,7 @@ public class Book {
 	}
 	@Override
 	public String toString() {
-		return String.format("%-5d %-20s %-15s %-15d %-15s %-15.2f", masach, tensach, tentacgia, namsanxuat, tomtatnoidung, giatien);
+		return String.format("%-5d %-20s %-15s %-15d %-15s %-15.2f", masach, tensach, x, namsanxuat, tomtatnoidung, giatien);
 	}
 	public void display() {
 		System.out.println(toString());

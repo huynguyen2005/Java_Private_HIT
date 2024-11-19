@@ -5,8 +5,46 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Book> a = new ArrayList<>();
+		a.add(new Book(111, "Sach thanh", new Tacgia("Alice"), 2000, "Dame big", 101.3));
+        a.add(new Book(112, "Sach truy hon", new Tacgia("Maloc"), 2100, "Giam hoi mau", 98.3));
+        a.add(new Book(113, "Bang suong", new Tacgia("Nakarot"), 1999, "Dong bang", 50.88));
+        a.add(new Book(114, "Quy kiem", new Tacgia("Google"), 5000, "Hut mau", 2435.55));
+        a.add(new Book(115, "Dac nhan tam", new Tacgia("Dieu thuyen"), 2025, "Your life", 66.56));
+		System.out.println("--------------Menu-------------");
+		System.out.println("1.Them sach moi");
+		System.out.println("2.Chinh sua thong tin sach");
+		System.out.println("3.In ra danh sach co trong mang");
+		System.out.println("4.In ra cuon sach lau doi co kinh nhat");
+		System.out.println("5.In ra cuon sach phu hop voi gia tien nguoi mua yeu cau");
+		System.out.println("6.Sap xep lai danh sach cac cuon sach");
+		System.out.print("Ban muon chon so may: ");
+		int k = sc.nextInt();
+		switch(k) {
+			case 1:
+				add(a);
+				break;
+			case 2:
+				sua(a);
+				break;
+			case 3:
+				in(a);
+				break;
+			case 4:
+				sacholdmax(a);
+				break;
+			case 5:
+				fitt(a);
+				break;
+			case 6:
+				sx(a);
+				break;
+		}
+	}
 	public static void add(ArrayList<Book> a) {
-		a.add(new Book(116, "Tam nhin", "Luan", 1989, "Your eyes", 90.5));
+		a.add(new Book(116, "Tam nhin",new Tacgia("Murad"), 1989, "Your eyes", 90.5));
 		for(Book bk : a) {
 			bk.display();
 		}
@@ -19,7 +57,7 @@ public class Main1 {
 			if(i==stt-1) {
 				a.get(i).setMasach(333);
 				a.get(i).setTensach("Sua ten");
-				a.get(i).setTentacgia("Nguyen");
+				a.get(i).x.getTentacgia("Huy");
 				a.get(i).setNamsanxuat(9999);
 				a.get(i).setTomtatnoidung("Hihi");
 				a.get(i).setGiatien(5555.55);
@@ -76,44 +114,6 @@ public class Main1 {
 		}
 		for(Book bk:a) {
 			bk.display();
-		}
-	}
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		ArrayList<Book> a = new ArrayList<>();
-		a.add(new Book(111, "Sach thanh", "Huy", 2000, "Dame big", 101.3));
-        a.add(new Book(112, "Sach truy hon", "Thinh", 2100, "Giam hoi mau", 98.3));
-        a.add(new Book(113, "Bang suong", "Dong", 1999, "Dong bang", 50.88));
-        a.add(new Book(114, "Quy kiem", "Manh", 5000, "Hut mau", 2435.55));
-        a.add(new Book(115, "Dac nhan tam", "Vinh", 2025, "Your life", 66.56));
-		System.out.println("----------Menu----------");
-		System.out.println("1.Them sach moi");
-		System.out.println("2.Chinh sua thong tin sach");
-		System.out.println("3.In ra danh sach co trong mang");
-		System.out.println("4.In ra cuon sach lau doi co kinh nhat");
-		System.out.println("5.In ra cuon sach phu hop voi gia tien nguoi mua yeu cau");
-		System.out.println("6.Sap xep lai danh sach cac cuon sach");
-		System.out.print("Ban muon chon so may: ");
-		int k = sc.nextInt();
-		switch(k) {
-			case 1:
-				add(a);
-				break;
-			case 2:
-				sua(a);
-				break;
-			case 3:
-				in(a);
-				break;
-			case 4:
-				sacholdmax(a);
-				break;
-			case 5:
-				fitt(a);
-				break;
-			case 6:
-				sx(a);
-				break;
 		}
 	}
 }

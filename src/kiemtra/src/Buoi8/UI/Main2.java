@@ -32,7 +32,9 @@ public class Main2 {
                 scanner.nextLine();
                 switch (n){
                     case 1:
-                        iAccountServiceimpl.getAllAccount();
+                        for(Account account15:iAccountServiceimpl.getAllAccount()){
+                            System.out.println(account15.toString());
+                        }
                         break;
                     case 2:
                         System.out.print("Nhap id: ");
@@ -61,7 +63,9 @@ public class Main2 {
                     case 3:
                         System.out.println("Nhap username ma ban muon tim kiem: ");
                         String username1 = scanner.nextLine();
-                        iAccountServiceimpl.getAccountByUsername(username1);
+                        Account account111 = new Account();
+                        account111=iAccountServiceimpl.getAccountByUsername(username1);
+                        System.out.println(account111.toString());
                         break;
                     case 4:
                         System.out.println("Nhap username ma ban muon xoa: ");

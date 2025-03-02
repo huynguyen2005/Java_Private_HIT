@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Buoi10/Buoi10.iml" filepath="$PROJECT_DIR$/Buoi10/Buoi10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buoi8/Buoi8.iml" filepath="$PROJECT_DIR$/Buoi8/Buoi8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HIT_Java_Priavte.iml" filepath="$PROJECT_DIR$/HIT_Java_Priavte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kiemtra/kiemtra.iml" filepath="$PROJECT_DIR$/kiemtra/kiemtra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luyentap2/luyentap2.iml" filepath="$PROJECT_DIR$/luyentap2/luyentap2.iml" />
+    </modules>
+  </component>
+</project>

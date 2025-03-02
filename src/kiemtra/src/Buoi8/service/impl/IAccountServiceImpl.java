@@ -9,13 +9,10 @@ import java.util.List;
 
 public class IAccountServiceImpl implements IAccountService {
     private IAuthServiceImpl iAuthServiceimpl = new IAuthServiceImpl();
-    private List<Account>   newaccountList = new ArrayList<>();
+    private List<Account> newaccountList = new ArrayList<>();
     @Override
     public List<Account> getAllAccount() {
-        for(Account account11:iAuthServiceimpl.getAccountlist()){
-            newaccountList.add(account11);
-        }
-        return newaccountList;
+        return iAuthServiceimpl.getAccountlist();
     }
 
     @Override
